@@ -1,0 +1,390 @@
+:root {
+  --color-primary: rgb(45, 42, 46);
+  --color-primary-darker: rgb(34, 31, 34);
+  --color-secondary: rgb(203, 200, 206);
+  --color-secondary-darker: rgb(128, 126, 130);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary);
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* nav */
+
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: var(--color-primary-darker);
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.nav__title {
+  color: var(--color-secondary);
+  font-family: Papyrus;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 8px;
+}
+
+.nav__item {
+  margin-left: 1.5rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+.nav__link img {
+  height: 33px;
+}
+.nav__text {
+  font-size: 1.1rem;
+  display: block;
+  transition: all 0.3s;
+  color: var(--color-secondary);
+}
+.nav__link:hover {
+  opacity: 0.7;
+}
+
+/* header */
+.header {
+  height: 100vh;
+
+  /* overflow: hidden; */
+}
+.header__text {
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  color: var(--color-secondary);
+
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 2.3rem;
+}
+.header__img {
+  display: flex;
+  position: relative;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  top: 67%;
+  left: 40%;
+}
+.box {
+  background-color: black;
+  height: 50px;
+  width: 55%;
+  border-radius: 0 50px 50px 0;
+}
+
+.header-btn {
+  display: block;
+  position: absolute;
+  height: 70px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--color-secondary);
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+.btn-1 {
+  top: 70%;
+  left: 77%;
+}
+.btn-2 {
+  top: 80.1%;
+  left: 83.9%;
+}
+.btn-3 {
+  top: 90.4%;
+  left: 90.79%;
+}
+
+.btn-1:hover {
+  background-color: white;
+  box-shadow: 3px 20px 20px black;
+}
+.btn-2:hover {
+  background-color: white;
+  box-shadow: 3px 20px 20px black;
+}
+
+.btn-3:hover {
+  background-color: white;
+  box-shadow: 3px 20px 20px black;
+}
+
+.wire {
+  display: block;
+
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  width: 5px;
+  z-index: -1;
+}
+.holder {
+  position: absolute;
+
+  height: 50px;
+  background-color: black;
+  width: 60px;
+  border-radius: 50px 50px 0 0;
+  transform: translate(-50%, -50%);
+}
+.bulb {
+  position: absolute;
+
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 20px;
+  border-radius: 0 0 50px 50px;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+}
+
+.wire-1 {
+  top: 30%;
+  left: 77%;
+  height: 60vh;
+}
+.holder-1 {
+  top: 59%;
+  left: 77%;
+}
+.bulb-1 {
+  top: 62%;
+  left: 77%;
+}
+
+.wire-2 {
+  top: 30%;
+  left: 83.9%;
+  height: 75vh;
+}
+.holder-2 {
+  top: 69.2%;
+  left: 83.9%;
+}
+.bulb-2 {
+  top: 72.2%;
+  left: 83.9%;
+}
+.wire-3 {
+  top: 30%;
+  left: 90.79%;
+  height: 95vh;
+}
+.holder-3 {
+  top: 79.4%;
+  left: 90.79%;
+}
+.bulb-3 {
+  top: 82.5%;
+  left: 90.79%;
+}
+.bulb-on {
+  box-shadow: 1px 1px 20px rgb(255, 255, 255);
+  /* filter: drop-shadow(100px 100px 100px solid rgb(255, 255, 255)); */
+}
+
+/* setion */
+.section {
+  position: relative;
+  height: 100vh;
+  z-index: 10;
+}
+
+.project-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+
+  font-size: 4.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+}
+.project-section-title p {
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.project-section-title p:hover {
+  scale: 1.4;
+}
+.projects-container {
+  display: flex;
+  margin: 100px;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.project {
+  height: 200px;
+  min-width: 60px;
+  width: 80px;
+
+  background-color: var(--color-secondary);
+  border-radius: 0 10px 0 10px;
+  margin: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  box-shadow: 2px 9px 10px black;
+}
+
+.project p {
+  color: var(--color-primary-darker);
+  font-weight: 800;
+}
+.link {
+  text-decoration: none;
+}
+
+.project:hover {
+  transform: translateY(-30px);
+  scale: 1.1;
+  background-color: rgb(255, 255, 255);
+  transition: 0.35s;
+}
+
+.back-home-btn {
+  height: 70px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: var(--color-secondary);
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  margin-left: 50px;
+  transition: ease-in-out 0.3s;
+}
+.back-home-btn:hover {
+  border-radius: 16px;
+}
+.shelf {
+  background-color: black;
+  height: 18px;
+  width: 50%;
+  min-width: 740px;
+}
+
+.plant {
+  position: absolute;
+  height: 160px;
+  transform: translate(-50%, -50%);
+  top: 58%;
+  left: 45%;
+  filter: drop-shadow(5px 10px 10px black);
+}
+.wire-projects {
+  top: 17%;
+  left: 18%;
+  height: 35vh;
+}
+.holder-projects {
+  top: 33%;
+  left: 18%;
+}
+.bulb-projects {
+  top: 36%;
+  left: 18%;
+}
+
+.preview-box {
+  position: absolute;
+  background-color: var(--color-secondary);
+  height: 400px;
+  width: 660px;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 75%;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.preview-box-img {
+  position: absolute;
+  z-index: 1;
+  height: 400px;
+  width: 660px;
+}
+.preview-box p {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.loading {
+  display: block;
+  margin: auto;
+  margin-top: 90px;
+  height: 50px;
+}
+.project-para {
+  margin: 50px;
+  text-align: center;
+  font-size: 1.45rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* footer */
+
+.footer {
+  height: 100vh;
+  position: relative;
+  background-color: var(--color-primary-darker);
+}
+.About-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+  font-family: "Courier New", Courier, monospace;
+}
+.back-to-projects-btn {
+  height: 70px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: var(--color-secondary);
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  margin-left: 50px;
+  transition: ease-in-out 0.3s;
+}
+.back-to-projects-btn:hover {
+  border-radius: 16px;
+}
+.description {
+  color: var(--color-secondary);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+  margin: 100px;
+}
+/* hide */
+.hidden {
+  display: none;
+}
