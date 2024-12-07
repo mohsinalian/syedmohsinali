@@ -1,13 +1,18 @@
 :root {
-  --color-primary: rgb(45, 42, 46);
-  --color-primary-darker: rgb(34, 31, 34);
+  /* --color-primary: rgb(45, 42, 46); */
+  --color-primary: rgb(17, 17, 17);
+
+  /* --color-primary-darker: rgb(34, 31, 34); */
+  --color-primary-darker: rgb(30, 30, 30);
+
   --color-secondary: rgb(203, 200, 206);
+
   --color-secondary-darker: rgb(128, 126, 130);
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-primary);
+  background: linear-gradient(rgb(17, 17, 17), rgb(30, 30, 30));
   box-sizing: border-box;
   user-select: none;
   overflow: hidden;
@@ -105,7 +110,8 @@ html {
   width: 110px;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-darker);
+  color: var(--color-secondary);
   font-family: "Courier New", Courier, monospace;
   border: none;
   transform: translate(-50%, -50%);
@@ -125,15 +131,20 @@ html {
 
 .btn-1:hover {
   background-color: white;
+  color: black;
   box-shadow: 3px 20px 20px black;
 }
 .btn-2:hover {
   background-color: white;
+  color: black;
+
   box-shadow: 3px 20px 20px black;
 }
 
 .btn-3:hover {
   background-color: white;
+  color: black;
+
   box-shadow: 3px 20px 20px black;
 }
 
@@ -247,8 +258,8 @@ html {
   height: 200px;
   min-width: 60px;
   width: 80px;
-
-  background-color: var(--color-secondary);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-primary-darker);
   border-radius: 0 10px 0 10px;
   margin: 10px;
   margin-bottom: 0;
@@ -257,8 +268,8 @@ html {
 }
 
 .project p {
-  color: var(--color-primary-darker);
-  font-weight: 800;
+  color: var(--color-secondary);
+  font-family: 500;
 }
 .link {
   text-decoration: none;
@@ -267,7 +278,8 @@ html {
 .project:hover {
   transform: translateY(-30px);
   scale: 1.1;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(46, 46, 46);
+
   transition: 0.35s;
 }
 
@@ -276,7 +288,8 @@ html {
   width: 110px;
   margin-bottom: 20px;
   border-radius: 6px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-darker);
+  color: var(--color-secondary);
   font-family: "Courier New", Courier, monospace;
   border: none;
   margin-left: 50px;
@@ -316,13 +329,13 @@ html {
 
 .preview-box {
   position: absolute;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-darker);
   height: 400px;
   width: 660px;
   transform: translate(-50%, -50%);
   top: 45%;
   left: 75%;
-  border: 10px solid rgb(0, 0, 0);
+
   border-radius: 5px;
 }
 .preview-box-img {
@@ -335,7 +348,8 @@ html {
   display: block;
   text-align: center;
   font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-secondary);
   font-weight: 600;
 }
 .loading {
@@ -358,7 +372,7 @@ html {
 .footer {
   height: 100vh;
   position: relative;
-  background-color: var(--color-primary-darker);
+  background-color: var(--color-primary);
 }
 .About-title {
   text-align: center;
@@ -372,7 +386,9 @@ html {
   width: 110px;
   margin-bottom: 20px;
   border-radius: 6px;
-  background-color: var(--color-secondary);
+
+  background-color: var(--color-primary-darker);
+  color: var(--color-secondary);
   font-family: "Courier New", Courier, monospace;
   border: none;
   margin-left: 50px;
