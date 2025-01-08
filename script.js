@@ -87,6 +87,8 @@ allProjects.forEach((project) => {
       previewImg.src = "img/know-it.png";
     } else if (project.classList.contains("quran")) {
       previewImg.src = "img/quran-code-of-life.png";
+    } else if (project.classList.contains("gup-shup")) {
+      previewImg.src = "img/gup shup.png";
     }
     previewImg.addEventListener("load", function () {
       previewImg.classList.remove("hidden");
